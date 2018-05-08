@@ -10,92 +10,25 @@ body {
   background: url(../images/polygon.jpg);
   background-size: 100%;
 }
-
 h1 {
   font-family: Akura Popo;
   margin-bottom: -60px;
-  margin-top: 8px;
+  margin-top: 14px;
   font-size: 45px;
   color: #D59527;
 }
-
-h2 {
+h4{
   font-family: Akura Popo;
-  margin-top: 15px;
+  margin-top: 10px;
   text-align: center;
-  font-size: 60px;
-}
-
-h3 {
-  font-family: Aldrich;
-  font-size: 15px;
-  padding: 5px;
-  color:#D59527;
-  text-align: center;
-  background opacity: 0.7;
-  background-color: #050404;
-}
-
-h5 {
-  font-family: Akura Popo;
   font-size: 60px;
   color: #D59527;
-  opacity: 1;
-  margin-top: 10px;
-  margin-left: 40px;
-  margin-bottom: 0;
-}
-
-h6 {
-  font-family: Akura Popo;
-  font-size: 50px;
-  text-align: center;
-  background-color: #D59527;
-  background-size: 20px;
-  margin-left: -100px;
-}
-
-form {
-    padding: 20px;
-    margin-left: 60px;
-    margin-top: 0;
-    background-color: lightgrey 0; 
-    font-family: Aldrich;
-    width: 80%;
-    color: white;
-    font-size: 15px;
-
-}
-
-input[type=email] {
-    width: 80%;
-    padding: 5px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    margin-top: 10px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    resize: none;
-}
-
-figure {
-    display: inline-block;
 }
 
 footer {
   background-color: #333;
-  padding: 45px;
+  padding: 40px;
 }
-
 
 .topnav {
   overflow: hidden;
@@ -103,12 +36,11 @@ footer {
 }
 
 .topnav a {
-  font-family: Aldrich;
   float: right;
   display: block;
   color: #748E54;
   text-align: center;
-  padding: 20px 65px;
+  padding: 30px 65px;
   text-decoration: none;
   font-size: 20px;
 }
@@ -133,8 +65,7 @@ footer {
 .topnav .icon {
   display: none;
 }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -142,20 +73,71 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+    .topnav.responsive a {
     float: none;
-    display: block;
-    text-align: left;
+    text-align: right;
+    display: block; bottom;
   }
 }
 
+/*This is for the footer stuff*/
+.email {
+  background: url("../images/emaillogo.png") no-repeat;
+  background-position: left;
+  background-size: 30%;
+  width: 50px;
+  padding-left: 30px;
+  margin-left: 630px;
+}
+.discord {
+  background: url("../images/discordlogo.png") no-repeat;
+  background-position: left;
+  background-size: 30%;
+  width: 50px;
+  padding-left: 30px;
+  margin-left: 630px;
+}
+.twittertag{
+  background: url("../images/twitterlogo2.png") no-repeat;
+  background-position: left;
+  background-size: 30%;
+  width: 50px;
+  padding-left: 30px;
+  margin-left: 630px;
+}
+.adjustment {
+  margin-left: 630px;
+}
+/*
+.twitter {
+  margin-left: 700px;
+}*/
+.email, .discord, .twittertag{
+  color: #b5bb8b;
+  font-family: Aldrich; 
+}
+
+/* End of footer stuff*/
+
+/*About pg*/
+.textblock {
+  background: rgba(5, 4, 4, 0.7);
+  margin:50px 50px 50px 100px;
+
+}
+.workpic{
+  width: 100%;
+  border: #D59527 solid 4pt;
+  margin-right: 100px;
+}
+/*About pg*/
 .header {
     text-align: center;
     padding: 32px;
@@ -169,21 +151,13 @@ footer {
 
 .container {
   position: relative;
-  width: 80%;
-  margin: auto;
-  background-color: white;
-}
-
-.textbox2 {
-  display: inline-block;
-  background: rgba(5, 4, 4, 0.7);
-  margin-left: 80px;
-  width: 80%;
+  width: 50%;
 }
 
 .image {
   display: block;
-  width: 100%;
+  width: 80%;
+  height: auto;
 }
 .column1:hover .overlay {
   opacity: 1;
@@ -191,12 +165,12 @@ footer {
 
 .overlay {
   position: absolute;
-  top: 0px;
+  top: 50px;
   bottom: 0;
-  left: 0px;
+  left: 42px;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: 83%;
+  width: 79%;
   opacity: 0;
   transition: .5s ease;
   background-color: #000000;
@@ -220,46 +194,6 @@ footer {
   text-decoration: none;
   }
 
-
-
-.button {
-  border:none;
-  display:inline-block;
-  padding:12px 20px;
-  vertical-align:middle;
-  overflow:hidden;
-  text-decoration:none;
-  color:inherit;
-  background-color:inherit;
-  text-align:center;
-  cursor:pointer;
-  white-space:nowrap
-}
-
-.arrows {
-  color: black;
-  background-color: #D59527;
-}
-
-.display-left {
-  position:absolute;
-  top:50%;
-  left: 0%;
-  transform:translate(0%,-50%);
-  -ms-transform:translate(-0%,-50%);
-}
-
-.display-right {
-  position: absolute;
-  top: 50%;
-  right:-3%;
-  transform:translate(0%,-50%);
-  -ms-transform:translate(-0%,-50%);
-}
-
-.center {
-  text-align: center;
-}
 /* Create four equal columns that sits next to each other */
 .column1 {
     flex: 25%;
@@ -267,35 +201,11 @@ footer {
     padding: 50px 5px;
 }
 
-.column2 {
-   flex: 25%;
-    max-width: 20%;
-    margin: auto;
-}
-
 .column1 img {
     margin-top: 0px;
-    width: 100%;
-}
-
-.column2 img {
-    margin-top: -10px;
-    margin-bottom: 100px;
-    margin-left: 8%;
+    margin-left: 5%;
     vertical-align: middle;
-    border: solid #D59527 5px;
 }
-
-.column2 h3 {
-  float: center;
-  margin-top: -80px;
-  margin-bottom: 50px;
-  background: rgba(5, 4, 4, 0.7);
-  text-align: center;
-  border-radius: 30px;
-  transform:scaleX(0.9);
-}
-
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
@@ -312,3 +222,9 @@ footer {
         max-width: 100%;
     }
 }
+@media screen and (max-width: 780px){
+  .email, .discord, .twittertag{
+    margin: auto;
+  }
+}
+
