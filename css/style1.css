@@ -13,7 +13,7 @@ body {
 h1 {
   font-family: Akura Popo;
   margin-bottom: -60px;
-  margin-top: 14px;
+  margin-top: 8px;
   font-size: 45px;
   color: #D59527;
 }
@@ -36,11 +36,12 @@ footer {
 }
 
 .topnav a {
+  font-family: Aldrich;
   float: right;
   display: block;
   color: #748E54;
   text-align: center;
-  padding: 30px 65px;
+  padding: 20px 30px;
   text-decoration: none;
   font-size: 20px;
 }

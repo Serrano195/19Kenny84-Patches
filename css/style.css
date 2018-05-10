@@ -61,14 +61,14 @@ form {
     margin-top: 0;
     background-color: lightgrey 0; 
     font-family: Aldrich;
-    width: 80%;
+    width: 90%;
     color: white;
     font-size: 15px;
 
 }
 
 input[type=email] {
-    width: 80%;
+    width: 90%;
     padding: 5px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -92,8 +92,10 @@ figure {
 }
 
 footer {
+  width: 100%;
   background-color: #333;
-  padding: 45px;
+  padding-top: 45px; 
+  padding-bottom: 45px;
   text-align: center;
 }
 
@@ -109,7 +111,7 @@ footer {
   display: block;
   color: #748E54;
   text-align: center;
-  padding: 20px 65px;
+  padding: 20px 30px;
   text-decoration: none;
   font-size: 20px;
 }
@@ -127,7 +129,7 @@ footer {
 }
 
 .active {
-  background-color: lightgray;
+  background-color: lightgrey;
   color: white;
 }
 
@@ -135,7 +137,7 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 930px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -143,19 +145,28 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 930px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
-  }
+    width: 40px;
+  }  
+
   .topnav.responsive a {
     float: none;
-    display: block; bottom;
+    display: block;
     text-align: right;
   }
+
+  .topnav.responsive a.top {
+    margin-top: 60px;
+  }
 }
+
+
+
 
 .header {
     text-align: center;
@@ -184,7 +195,7 @@ footer {
   display: inline-block;
   background: rgba(5, 4, 4, 0.7);
   margin-left: 30px;
-  width: 80%;
+  width: 90%;
 }
 
 .image {
@@ -327,7 +338,7 @@ footer {
   background-size: 30%;
   width: 50px;
   padding-left: 30px;
-  margin: auto
+  margin: auto;
 }
 .adjustment {
   margin: auto;
@@ -343,7 +354,7 @@ footer {
 /*footer stuff ends*/
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
+@media (max-width: 920px) {
     .column1, .column2 {
         flex: 50%;
         max-width: 50%;
@@ -351,14 +362,14 @@ footer {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
+@media (max-width: 920px) {
     .column1, .column2{
         flex: 100%;
         max-width: 100%;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 920px) {
     textarea {
         flex: 100%;
         max-width: 100%;
@@ -368,9 +379,9 @@ footer {
 
 
 /*Responsive Layout - footer */
-@media (max-width: 500px){
+@media (max-width: 920px){
   .email, .discord, .twittertag, .workpic{
-    margin: auto;
+    margin-left: 50px;
   }
   
 }
