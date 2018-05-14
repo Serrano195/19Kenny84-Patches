@@ -11,14 +11,14 @@ body {
   background-size: 100%;
 }
 h1 {
-  font-family: Akura Popo;
+  font-family: Black Ops One;
   margin-bottom: -60px;
   margin-top: 8px;
   font-size: 45px;
   color: #D59527;
 }
 h4{
-  font-family: Akura Popo;
+  font-family: Black Ops One;
   margin-top: 10px;
   text-align: center;
   font-size: 60px;
@@ -131,13 +131,12 @@ footer {
 /*About pg*/
 .textblock {
   background: rgba(5, 4, 4, 0.7);
-  margin:50px 50px 50px 100px;
+  width:50%
 
 }
 .workpic{
-  width: 100%;
-  border: #D59527 solid 4pt;
-  margin-right: 100px;
+  width: 90%;
+  display: block;
 }
 /*About pg*/
 .header {
@@ -199,29 +198,41 @@ footer {
 /* Create four equal columns that sits next to each other */
 .column1 {
     flex: 25%;
-    width: 25%;
+    max-width: 50%;
     padding: 50px 5px;
+    margin-right: 40px;
 }
 
 .column1 img {
-    margin-top: 0px;
-    margin-left: 5%;
-    vertical-align: middle;
+   flex: 25%;
+    max-width: 90%;
+    margin: auto;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
+@media (max-width: 920px) {
     .column1 {
         flex: 50%;
         max-width: 50%;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 920px) {
+    .column1 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 600px) {
     .column1 {
         flex: 100%;
         max-width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 @media screen and (max-width: 780px){
