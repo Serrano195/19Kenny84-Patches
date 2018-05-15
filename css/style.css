@@ -58,7 +58,7 @@ h6 {
 
 form {
     padding: 20px;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-top: 0;
     background-color: lightgrey 0; 
     font-family: Aldrich;
@@ -71,7 +71,7 @@ form {
 input[type=email] {
     width: 90%;
     padding: 5px 20px;
-    margin: 8px 0;
+    margin-left:0px;
     box-sizing: border-box;
 }
 
@@ -195,8 +195,8 @@ footer {
 .textbox2 {
   display: inline-block;
   background: rgba(5, 4, 4, 0.7);
-  margin-left: 30px;
-  width: 90%;
+  margin-left: 0px;
+  width: 100%;
 }
 
 .image {
