@@ -103,7 +103,7 @@ footer {
   background-size: 30%;
   width: 50px;
   padding-left: 30px;
-  margin-left: 630px;
+  margin: auto;
 }
 .discord {
   background: url("../images/discordlogo.png") no-repeat;
@@ -111,7 +111,7 @@ footer {
   background-size: 30%;
   width: 50px;
   padding-left: 30px;
-  margin-left: 630px;
+  margin: auto;
 }
 .twittertag{
   background: url("../images/twitterlogo2.png") no-repeat;
@@ -119,18 +119,17 @@ footer {
   background-size: 30%;
   width: 50px;
   padding-left: 30px;
-  margin-left: 630px;
+  margin: auto;
 }
 .adjustment {
-  margin-left: 630px;
+  margin: auto;
 }
-/*
-.twitter {
-  margin-left: 700px;
-}*/
+
 .email, .discord, .twittertag{
   color: #b5bb8b;
   font-family: Aldrich; 
+  max-width: 100%;
+  max-height: auto;
 }
 
 /* End of footer stuff*/
@@ -242,9 +241,9 @@ footer {
         margin-right: 0px;
     }
 }
-@media screen and (max-width: 780px){
+@media screen and (max-width: 920px) {
   .email, .discord, .twittertag, .workpic {
-    margin: auto;
+    margin-left:0px;
   }
   
 }

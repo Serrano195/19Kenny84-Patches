@@ -390,7 +390,7 @@ footer {
 /*Responsive Layout - footer */
 @media (max-width: 920px){
   .email, .discord, .twittertag, .workpic{
-    margin-left: 50px;
+    margin-left: 30px;
   }
   
 }
